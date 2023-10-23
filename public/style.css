@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gabarito', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 60px;
+    padding: 8px;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 2px black;
+}
+header span ul li{
+    display: inline-block;
+    margin: 10px;
+}
+main{
+    margin: 10px;
+}
+
+.MainBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.MainBoxUnder{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+}
+.LogoMain{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Link{
+    color: black;
+    text-decoration: none;
+}
+
+.MainBox2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.Mainbox2Under{
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.Mainbox2Under ul ol{
+    font-size: 20px;
+    margin: 10px;
+    margin: 10px;
+}
+.LogoHome{
+    height: 65%;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+footer div{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-attachment: fixed;
+}
+.List{
+    background-color: white;
+    height: 200px;
+    text-align: start;
+}
+.List ul li{
+    list-style: none;
+    margin: 20px;
+}
+.List ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}

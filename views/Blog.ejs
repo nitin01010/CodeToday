@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gabarito', sans-serif;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+            height: 60px;
+            padding: 8px;
+            flex-wrap: wrap;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        header span ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .Link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .MainBlog {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .Cart {
+            background-color: white;
+            width: 300px;
+            height: 330px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .thumnel {
+            width: 280px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .Cart h2 {
+            padding: 10px;
+        }
+
+        .img {
+            width: 300px;
+        }
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        footer div {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            background-attachment: fixed;
+        }
+
+        .List {
+            background-color: white;
+            height: 200px;
+            text-align: start;
+        }
+
+        .List ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .List ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        .CartLink {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>
+            <h2>Logo</h2>
+        </span>
+        <span>
+            <ul>
+                <li><a class="Link" href="/">Home</a></li>
+                <li><a class="Link" href="/accounts/blog">Blog</a></li>
+                <li><a class="Link" href="/api/jwt">Log out</a></li>
+            </ul>
+        </span>
+    </header>
+
+    <main>
+        <div class="MainBlog">
+            <% for(let item of data){%>
+                <a href="/accounts/post/<%= item._id %>" class="CartLink">
+                    <div class="Cart">
+                        <img src="<%=item.img %>" class="img" alt="">
+                        <h2>
+                            <%= item.title %>
+                        </h2>
+                        <p> &nbsp;&nbsp;&nbsp;@Nitin</p>
+                    </div>
+                </a>
+                <%}%>
+        </div>
+    </main>
+
+
+    <footer>
+        <span>
+            <div class="List">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/nitin0202/">Linkdin</a></li>
+                    <li><a href="/accounts/blog">Blog</a></li>
+                    <li><a href="https://www.youtube.com/@Nitin0202">Youtube</a></li>
+                </ul>
+            </div>
+        </span>
+        <div>
+            <p>All copyright recved : 🌎 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

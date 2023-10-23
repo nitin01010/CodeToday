@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gabarito', sans-serif;
+        }
+
+        body {
+            background-color: yellow;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+            height: 60px;
+            padding: 8px;
+            flex-wrap: wrap;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        header span ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .Link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .dashboardBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: yellow;
+            padding: 10px;
+            height: 400px;
+        }
+
+        .dashboardBox h2 {
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .dashboardBox p {
+            font-size: 18px;
+            color: black;
+            padding: 10px;
+        }
+
+        .dashboardBox2 {
+            display: flex;
+            justify-content: space-around;
+            background-color: yellow;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dashboardBox2Under {
+            text-align: start;
+            width: 350px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 10px;
+        }
+
+        .dashboardBox2Under ul ol {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .dashboardBox2Under p {
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .dashboardBox3 {
+            display: flex;
+            justify-content: space-around;
+            background-color: yellow;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dashboardBox3Under {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 250px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        footer div {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            background-attachment: fixed;
+        }
+
+        .List {
+            background-color: white;
+            height: 200px;
+            text-align: start;
+        }
+
+        .List ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .List ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>
+            <h2>Logo</h2>
+        </span>
+        <span>
+            <ul>
+                <li><a class="Link" href="/">Home</a></li>
+                <li><a class="Link" href="/accounts/blog">Blog</a></li>
+                <li><a class="Link" href="/api/jwt">Log out</a></li>
+            </ul>
+        </span>
+    </header>
+
+    <main>
+        <div class="dashboardBox">
+            <h2>welcome 👀 <%= name %>
+            </h2>
+            <br>
+            <p>Thank you for signing up! Welcome to CodeToday . <br> We're excited to have you with us.
+                Enjoy your experience! 😊✔ </p>
+        </div>
+        <section>
+            <div class="dashboardBox2">
+                <span class="dashboardBox2Under">
+                    <ul>
+                        <ol style="text-align: center;">Project</ol>
+                        <ol>1. Make a Amazon CLone ✅ </ol>
+                        <ol>2. Make a Netflix CLone ✅ </ol>
+                        <ol>3. Make a AirBnb Clone ✅ </ol>
+                        <ol>4. Make a Social media Clone ✅ </ol>
+                        <br>
+                        <hr>
+                        <ol>5. Show Your Project to Good People ✅</ol>
+                    </ul>
+                </span>
+                <span class="dashboardBox2Under">
+                    <h2 style="text-align: center;">Advice</h2>
+                    <br>
+                    <p>Please Write Code if you only watch tutorial than you never be a good coder always try to fix
+                        Error own try to help others 👀 </p>
+                </span>
+            </div>
+        </section>
+
+        <section>
+            <br><br><br>
+            <h2 style="text-align: center;padding: 10px; font-size: 16px;">Success Is Consistency | Follow to MERN STACK
+                DEVELOPER 🐱‍🏍✨</h2>
+            <div class="dashboardBox3">
+                <span class="dashboardBox3Under">
+                    <ul>
+                        <ol style="text-align: center;">Frontend</ol>
+                        <br>
+                        <ol>1. HTML | ✔ ONE WEEK </ol>
+                        <ol>2. CSS | ✔ TWO WEEK </ol>
+                        <ol>3. JAVASCRIPT | ✔ 2 MONTHS </ol>
+                        <ol>4. TAILWEENT/BOOTSTRAP | ✔ ONE WEEK</ol>
+                        <ol>5. REACT.JS | ✔ 1 MONTHS</ol>
+                        <br>
+                        <ol>6. <a href="">LINK</a></ol>
+                        <br>
+                        <hr>
+                        <ol>7. Make Project | ✅</ol>
+                    </ul>
+                </span>
+                <span class="dashboardBox3Under">
+                    <ul>
+                        <ol style="text-align: center;">Backend</ol>
+                        <br>
+                        <ol>1. Node.js | ✔ 2 WEEK </ol>
+                        <ol>2. Express.js | ✔ 2 WEEK </ol>
+                        <ol>3. MONGODB | ✔ 4 WEEK </ol>
+                        <ol>4. NPM | ✔ ONE WEEK </ol>
+                        <ol>5. GIT&GITHUB | ✔ 2 WEEK </ol>
+                        <br>
+                        <ol>6. <a href="">LINK</a></ol>
+                        <br>
+                        <hr>
+                        <ol>7. Make Project | ✅</ol>
+                    </ul>
+                </span>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <span>
+            <div class="List">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/nitin0202/">Linkdin</a></li>
+                    <li><a href="/accounts/blog">Blog</a></li>
+                    <li><a href="https://www.youtube.com/@Nitin0202">Youtube</a></li>
+                </ul>
+            </div>
+        </span>
+        <div>
+            <p>All copyright recved : 🌎 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
